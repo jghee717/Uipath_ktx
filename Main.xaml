@@ -192,7 +192,7 @@
               <av:Size x:Key="ShapeSize">200,66</av:Size>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="사용자input, 승차권조회" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="사용자input, 승차권조회" sap:VirtualizedContainerService.HintSize="519,2750" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="start" />
               <Variable x:TypeArguments="x:String" Name="destination" />
@@ -205,50 +205,50 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="452,238" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Title="출발역 정보">
+            <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="477,238" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Title="출발역 정보">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[start]</OutArgument>
               </ui:InputDialog.Result>
             </ui:InputDialog>
-            <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="452,238" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Title="도착역 정보">
+            <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="477,238" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Title="도착역 정보">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[destination]</OutArgument>
               </ui:InputDialog.Result>
             </ui:InputDialog>
-            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="452,238" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="mm/dd" Title="출발 날짜">
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="477,238" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="mm/dd" Title="출발 날짜">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[train_date]</OutArgument>
               </ui:InputDialog.Result>
             </ui:InputDialog>
-            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="452,238" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="0~23 사이의 숫자를 입력" Title="출발 시간대">
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="477,238" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="0~23 사이의 숫자를 입력" Title="출발 시간대">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[train_time]</OutArgument>
               </ui:InputDialog.Result>
             </ui:InputDialog>
-            <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="452,238" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Title="탑승 인원 정보">
+            <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="477,238" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Title="탑승 인원 정보">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[passenger_num]</OutArgument>
               </ui:InputDialog.Result>
             </ui:InputDialog>
-            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe KORAIL'" sap:VirtualizedContainerService.HintSize="452,784" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="1191434f20b7c2b17b3b029d35abf8a6" Selector="&lt;html app='chrome.exe' title='KORAIL 한국철도공사' /&gt;">
+            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe KORAIL'" sap:VirtualizedContainerService.HintSize="477,1268" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="1191434f20b7c2b17b3b029d35abf8a6" Selector="&lt;html app='chrome.exe' title='KORAIL 한국철도공사' /&gt;">
               <ui:BrowserScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                   </ActivityAction.Argument>
-                  <Sequence sap:VirtualizedContainerService.HintSize="418,638" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence sap:VirtualizedContainerService.HintSize="443,1122" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,546" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="401,1030" sap2010:WorkflowViewState.IdRef="Sequence_5">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'H2'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'H2'" sap:VirtualizedContainerService.HintSize="359,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
                         <ui:Click.CursorPosition>
                           <ui:CursorPosition Position="Center">
                             <ui:CursorPosition.OffsetX>
@@ -260,7 +260,7 @@
                           </ui:CursorPosition>
                         </ui:Click.CursorPosition>
                         <ui:Click.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="071d4285-2b7c-425b-950a-9736b8d721a1" InformativeScreenshot="004a2164696d2667c6e33cc9b2fda726" Selector="&lt;webctrl parentid='container' tag='H2' /&gt;">
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="071d4285-2b7c-425b-950a-9736b8d721a1" InformativeScreenshot="fbfc7a61c6331e1cbe0d4d9973499ed2" Selector="&lt;html app='chrome.exe' title='일반승차권' /&gt;&lt;webctrl aaname='승차권' tag='IMG' /&gt;">
                             <ui:Target.TimeoutMS>
                               <InArgument x:TypeArguments="x:Int32" />
                             </ui:Target.TimeoutMS>
@@ -270,9 +270,9 @@
                           </ui:Target>
                         </ui:Click.Target>
                       </ui:Click>
-                      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  txtGoStart'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[start]">
+                      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  txtGoStart'" EmptyField="True" sap:VirtualizedContainerService.HintSize="359,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[start]">
                         <ui:TypeInto.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5ed3f6d6-c018-4dec-b921-85c83067058d" InformativeScreenshot="fd9a01ac9f1fd86c17aec5355b8d4418" Selector="&lt;webctrl id='txtGoStart' tag='INPUT' type='text' /&gt;">
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5ed3f6d6-c018-4dec-b921-85c83067058d" InformativeScreenshot="d72017b78f7effc1f0ea132ede23bc40" Selector="&lt;html app='chrome.exe' title='일반승차권' /&gt;&lt;webctrl id='start' tag='INPUT' type='text' /&gt;">
                             <ui:Target.TimeoutMS>
                               <InArgument x:TypeArguments="x:Int32" />
                             </ui:Target.TimeoutMS>
@@ -282,9 +282,9 @@
                           </ui:Target>
                         </ui:TypeInto.Target>
                       </ui:TypeInto>
-                      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  txtGoEnd'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[destination]">
+                      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  txtGoEnd'" EmptyField="True" sap:VirtualizedContainerService.HintSize="359,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[destination]">
                         <ui:TypeInto.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a5da4b7d-0a7f-4e41-9e1d-f1b4d366ade9" InformativeScreenshot="c80f56699b1ad5102f35775fafd2aed3" Selector="&lt;webctrl id='txtGoEnd' tag='INPUT' type='text' /&gt;">
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a5da4b7d-0a7f-4e41-9e1d-f1b4d366ade9" InformativeScreenshot="10ed348ce8d455600f2713c5cbeca7af" Selector="&lt;html app='chrome.exe' title='일반승차권' /&gt;&lt;webctrl id='get' tag='INPUT' type='text' /&gt;">
                             <ui:Target.TimeoutMS>
                               <InArgument x:TypeArguments="x:Int32" />
                             </ui:Target.TimeoutMS>
@@ -294,6 +294,93 @@
                           </ui:Target>
                         </ui:TypeInto.Target>
                       </ui:TypeInto>
+                      <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  s_month'" sap:VirtualizedContainerService.HintSize="359,134" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="[train_date.Split(CCHAR(&quot;/&quot;))(0).ToString]">
+                        <ui:SelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="16">
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                            <x:String>6</x:String>
+                            <x:String>7</x:String>
+                            <x:String>8</x:String>
+                            <x:String>9</x:String>
+                            <x:String>10</x:String>
+                            <x:String>11</x:String>
+                            <x:String>12</x:String>
+                          </scg:List>
+                        </ui:SelectItem.Items>
+                        <ui:SelectItem.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="739970c4-333a-46f0-8d24-0b39edd7296c" InformativeScreenshot="ab93b2f83ce19f419c896fc1db81c52c" Selector="&lt;html app='chrome.exe' title='일반승차권' /&gt;&lt;webctrl id='s_month' tag='SELECT' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:SelectItem.Target>
+                      </ui:SelectItem>
+                      <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  s_day'" sap:VirtualizedContainerService.HintSize="359,134" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="[train_date.Split(CCHAR(&quot;/&quot;))(1).ToString]">
+                        <ui:SelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="32">
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                            <x:String>6</x:String>
+                            <x:String>7</x:String>
+                            <x:String>8</x:String>
+                            <x:String>9</x:String>
+                            <x:String>10</x:String>
+                            <x:String>11</x:String>
+                            <x:String>12</x:String>
+                            <x:String>13</x:String>
+                            <x:String>14</x:String>
+                            <x:String>15</x:String>
+                            <x:String>16</x:String>
+                            <x:String>17</x:String>
+                            <x:String>18</x:String>
+                            <x:String>19</x:String>
+                            <x:String>20</x:String>
+                            <x:String>21</x:String>
+                            <x:String>22</x:String>
+                            <x:String>23</x:String>
+                            <x:String>24</x:String>
+                            <x:String>25</x:String>
+                            <x:String>26</x:String>
+                            <x:String>27</x:String>
+                            <x:String>28</x:String>
+                            <x:String>29</x:String>
+                            <x:String>30</x:String>
+                            <x:String>31</x:String>
+                          </scg:List>
+                        </ui:SelectItem.Items>
+                        <ui:SelectItem.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="db29bc71-540c-4305-bafb-24b5518cc072" InformativeScreenshot="9f15684495b593a6351a6f5b12c15334" Selector="&lt;webctrl id='s_day' tag='SELECT' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:SelectItem.Target>
+                      </ui:SelectItem>
+                      <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Item="{x:Null}" Items="{x:Null}" DisplayName="Select Item" sap:VirtualizedContainerService.HintSize="359,96" sap2010:WorkflowViewState.IdRef="SelectItem_3">
+                        <ui:SelectItem.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="0606d1d1-68f9-43e6-99b0-c601dfea9a8c">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:SelectItem.Target>
+                      </ui:SelectItem>
                     </Sequence>
                   </Sequence>
                 </ActivityAction>
