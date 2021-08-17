@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ktx예약_플로우차트" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="624,701" sap2010:WorkflowViewState.IdRef="ktx예약_플로우차트_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ktx예약_플로우차트" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1379,827" sap2010:WorkflowViewState.IdRef="ktx예약_플로우차트_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="60">
       <x:String>System.Activities</x:String>
@@ -86,16 +86,16 @@
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">0,147</av:Point>
           <av:Size x:Key="ShapeSize">200,66</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">100,213 100,287</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">100,213 100,257</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="오픈 + 로그인" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <Sequence DisplayName="오픈 + 로그인" sap:VirtualizedContainerService.HintSize="552,1276" sap2010:WorkflowViewState.IdRef="Sequence_3">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:OpenBrowser BrowserType="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="510,1184" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="http://info.korail.com/mbs/www/index.jsp">
+        <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="510,1184" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="http://info.korail.com/mbs/www/index.jsp">
           <ui:OpenBrowser.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
@@ -112,7 +112,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-                <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe KORAIL'" sap:VirtualizedContainerService.HintSize="434,810" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="06601c19e398832d92997294760cd5b3" Selector="&lt;html app='chrome.exe' title='KORAIL 한국철도공사' /&gt;">
+                <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe KORAIL'" sap:VirtualizedContainerService.HintSize="434,810" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="06601c19e398832d92997294760cd5b3" Selector="&lt;html title='KORAIL 한국철도공사' /&gt;">
                   <ui:BrowserScope.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
@@ -136,7 +136,7 @@
                             </ui:CursorPosition>
                           </ui:Click.CursorPosition>
                           <ui:Click.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c0c64c1d-7fdd-49d4-890c-dbce15ca752b" InformativeScreenshot="93c80655f0d77ddd77aac917abcd4298" Selector="&lt;webctrl aaname='로그인' tag='IMG' /&gt;">
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c0c64c1d-7fdd-49d4-890c-dbce15ca752b" InformativeScreenshot="93c80655f0d77ddd77aac917abcd4298" Selector="&lt;html app='chrome.exe' title='KORAIL 한국철도공사' /&gt;&lt;webctrl aaname='로그인' tag='IMG' /&gt;">
                               <ui:Target.TimeoutMS>
                                 <InArgument x:TypeArguments="x:Int32" />
                               </ui:Target.TimeoutMS>
@@ -148,7 +148,7 @@
                         </ui:Click>
                         <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  txtMember'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[username]">
                           <ui:TypeInto.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1ff32e90-3b56-494e-9b8b-4db0c5776560" InformativeScreenshot="1693a695a5ac81f8370a489f8eb0eb0f" Selector="&lt;webctrl id='txtMember' tag='INPUT' type='text' /&gt;">
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1ff32e90-3b56-494e-9b8b-4db0c5776560" InformativeScreenshot="1693a695a5ac81f8370a489f8eb0eb0f" Selector="&lt;html app='chrome.exe' title='코레일소개' /&gt;&lt;webctrl id='txtMember' tag='INPUT' type='text' /&gt;">
                               <ui:Target.TimeoutMS>
                                 <InArgument x:TypeArguments="x:Int32" />
                               </ui:Target.TimeoutMS>
@@ -160,7 +160,7 @@
                         </ui:TypeInto>
                         <ui:TypeSecureText AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Secure Text 'INPUT  txtPwd'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="TypeSecureText_1" SecureText="[password]">
                           <ui:TypeSecureText.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="736e60d9-4b70-4dc6-8121-d47ff1025468" InformativeScreenshot="ef32b1edc7baf3e3c58e6a1837e61b78" Selector="&lt;webctrl tag='INPUT' type='password' /&gt;">
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="736e60d9-4b70-4dc6-8121-d47ff1025468" InformativeScreenshot="ef32b1edc7baf3e3c58e6a1837e61b78" Selector="&lt;html app='chrome.exe' title='코레일소개' /&gt;&lt;webctrl tag='INPUT' type='password' /&gt;">
                               <ui:Target.TimeoutMS>
                                 <InArgument x:TypeArguments="x:Int32" />
                               </ui:Target.TimeoutMS>
@@ -182,7 +182,7 @@
                             </ui:CursorPosition>
                           </ui:Click.CursorPosition>
                           <ui:Click.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="47119abd-071e-4fa2-b8d3-013eae21b9eb" InformativeScreenshot="e39c1f7d78b7ec59a9699c0b25c9e0bc" Selector="&lt;webctrl parentid='login_bg' tag='IMG' /&gt;">
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="47119abd-071e-4fa2-b8d3-013eae21b9eb" InformativeScreenshot="e39c1f7d78b7ec59a9699c0b25c9e0bc" Selector="&lt;html app='chrome.exe' title='코레일소개' /&gt;&lt;webctrl parentid='login_bg' tag='IMG' /&gt;">
                               <ui:Target.TimeoutMS>
                                 <InArgument x:TypeArguments="x:Int32" />
                               </ui:Target.TimeoutMS>
@@ -206,9 +206,9 @@
         <FlowStep x:Name="__ReferenceID0">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">0,287</av:Point>
+              <av:Point x:Key="ShapeLocation">0,257</av:Point>
               <av:Size x:Key="ShapeSize">200,66</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">100,353 100,403</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">100,323 100,377</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Sequence DisplayName="사용자input, 승차권조회" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_4">
@@ -504,11 +504,11 @@
             <FlowStep x:Name="__ReferenceID1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">0,403</av:Point>
+                  <av:Point x:Key="ShapeLocation">0,377</av:Point>
                   <av:Size x:Key="ShapeSize">200,66</av:Size>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="조회된 승차권 출력 및 메일전송" sap:VirtualizedContainerService.HintSize="528,1975" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <Sequence DisplayName="조회된 승차권 출력 및 메일전송" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_8">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="sd:DataTable" Name="TrainSchedule" />
                   <Variable x:TypeArguments="ui:GenericValue" Name="index" />
