@@ -508,7 +508,7 @@
                   <av:Size x:Key="ShapeSize">200,66</av:Size>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="조회된 승차권 출력 및 메일전송" sap:VirtualizedContainerService.HintSize="528,2121" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <Sequence DisplayName="조회된 승차권 출력 및 메일전송" sap:VirtualizedContainerService.HintSize="528,1975" sap2010:WorkflowViewState.IdRef="Sequence_8">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="sd:DataTable" Name="TrainSchedule" />
                   <Variable x:TypeArguments="ui:GenericValue" Name="index" />
@@ -519,13 +519,13 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe  일반승차권(직통)'" sap:VirtualizedContainerService.HintSize="486,2029" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="1426b397883008b8c7b0395ced071032" Selector="&lt;html app='chrome.exe' title='일반승차권(직통)' /&gt;">
+                <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe  일반승차권(직통)'" sap:VirtualizedContainerService.HintSize="486,1883" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="1426b397883008b8c7b0395ced071032" Selector="&lt;html app='chrome.exe' title='일반승차권(직통)' /&gt;">
                   <ui:BrowserScope.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,1883" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,1737" sap2010:WorkflowViewState.IdRef="Sequence_9">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -631,28 +631,6 @@
                             </ActivityAction>
                           </ui:ForEachRow.Body>
                         </ui:ForEachRow>
-                        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Chrome_RenderWidgetHost...'" sap:VirtualizedContainerService.HintSize="410,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
-                          <ui:Click.CursorPosition>
-                            <ui:CursorPosition Position="Center">
-                              <ui:CursorPosition.OffsetX>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:CursorPosition.OffsetX>
-                              <ui:CursorPosition.OffsetY>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:CursorPosition.OffsetY>
-                            </ui:CursorPosition>
-                          </ui:Click.CursorPosition>
-                          <ui:Click.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cbc315f7-53c9-4382-aea0-cf8a8e94a9dd" InformativeScreenshot="fba66bb7008e8e4db457de12c12f63cb" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='새 탭 - Chrome' /&gt;&lt;wnd aaname='가로' cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' /&gt;">
-                              <ui:Target.TimeoutMS>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:Target.TimeoutMS>
-                              <ui:Target.WaitForReady>
-                                <InArgument x:TypeArguments="ui:WaitForReady" />
-                              </ui:Target.WaitForReady>
-                            </ui:Target>
-                          </ui:Click.Target>
-                        </ui:Click>
                       </Sequence>
                     </ActivityAction>
                   </ui:BrowserScope.Body>
